@@ -27,8 +27,9 @@ public class TreeMth {
 
     }
     //后序遍历
-
-
+    public boolean isValidBST4(TreeNode root) {
+       return dfs(root)[1]!=Long.MAX_VALUE;
+    }
     private long[] dfs(TreeNode node) {
       if (node==null){
           return new long[]{Long.MAX_VALUE,Long.MIN_VALUE};
@@ -41,17 +42,6 @@ public class TreeMth {
           return new long[]{Long.MIN_VALUE,Long.MAX_VALUE};
       }
       return new long[]{Math.min(left_v[0],x),Math.max(right_v[1],x)};
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
