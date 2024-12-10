@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 回溯算法的剪枝
+ *
+ *
+ * **/
 public class Combine {
     private int k;
     private final List<List<Integer>> ans = new ArrayList<>();
