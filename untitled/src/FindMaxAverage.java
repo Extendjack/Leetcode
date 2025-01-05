@@ -25,6 +25,7 @@ public class FindMaxAverage {
      * 更新：更新答案。一般是更新最大值/最小值。
      * 出：下标为 i−k+1 的元素离开窗口，更新相关统计量。
      *
+     *
      **/
     public static double findMaxAverage(int[] nums, int k) {
         double sum=0.0;
