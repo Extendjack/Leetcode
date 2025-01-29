@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 public class MaxSum {
     public static void main(String[] args){
-        List<Integer> test=new ArrayList<>(){};
+        List<Integer> test=new ArrayList<Integer>(){};
         int[] e=new int[]{1,1,1,3};
         for (int w:e){
             test.add(w);

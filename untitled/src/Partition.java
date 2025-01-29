@@ -7,7 +7,7 @@ public class Partition {
     private String s;
     public List<List<String>> partition(String s) {
         if(s.length()==0){
-            return List.of();
+//            return List.of();
         }
         this.s=s;
         dfs(0, 0);

@@ -3,7 +3,7 @@ import java.util.*;
 public class ZigzagLevelOrder {
 
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        if(root==null)return List.of();
+
         List<List<Integer>> ans=new ArrayList<>();
         Queue<TreeNode> q=new ArrayDeque<>();
         q.add(root);

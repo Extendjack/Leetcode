@@ -13,7 +13,7 @@ public class Subsets {
         this.nums=nums;
         int n=nums.length;
         if(n==0){
-            return List.of();
+//            return List.of();
         }
         dfs(0);
         return ans;

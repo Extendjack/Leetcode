@@ -3,9 +3,9 @@ import java.util.*;
 public class LevelOrder {
     //两个队列
     public List<List<Integer>> levelOrder(TreeNode root) {
-        if(root==null)return List.of();
+//        if(root==null)return List.of();
         List<List<Integer>> ans=new ArrayList<>();
-        List<TreeNode> cur=List.of(root);
+        List<TreeNode> cur=null;
         while (!cur.isEmpty()){
             List<Integer> vals=new ArrayList<>();
             List<TreeNode> nxt=new ArrayList<>();
@@ -21,7 +21,7 @@ public class LevelOrder {
     }
     //一个队列
     public List<List<Integer>> levelOrder2(TreeNode root) {
-        if(root==null) return  List.of();
+//        if(root==null) return  List.of();
         List<List<Integer>> ans=new ArrayList<>();
         Queue<TreeNode> q=new ArrayDeque<>();
         q.add(root);
